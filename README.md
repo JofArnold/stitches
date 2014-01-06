@@ -1,71 +1,20 @@
-[Stitches](https://github.com/JofArnold/stitches)
-==========
-
-Stitches is an HTML5 sprite sheet generator.
-The current version is `1.3.5`. Documentation is available
-[here](http://draeton.github.com/stitches/stitches/doc/stitches.js.html).
-
-## Implementation
-
-After dependencies, Stitches requires a stylesheet, a script, and an HTML element to get the job done:
-
-```html
-<link rel="stylesheet" href="css/stitches-1.3.5.min.css">
-
-<script data-main="js/stitches.js" src="js/stitches-1.3.5.min.js"></script>
-```
-
-The sprite sheet generator is automatically created in elements that have the `stitches` class:
-
-```html
-<div class="stitches"></div>
-```
-
-If you choose, any images that are a part of the initial markup will be loaded onto the canvas:
-
-```html
-<div class="stitches">
-    <img src="img/test/github.png" data-name="github"/>
-    <img src="img/test/gmail.png" data-name="gmail"/>
-    <img src="img/test/linkedin.png" data-name="linkedin"/>
-    <img src="img/test/stackoverflow.png" data-name="stackoverflow"/>
-    <img src="img/test/tumblr.png" data-name="tumblr"/>
-    <img src="img/test/twitter.png" data-name="twitter"/>
-</div>
-```
-
-## Dependencies
-
-[jQuery 1.7.1](http://jquery.com/), [Modernizr 2.0.6](http://modernizr.com/), [Bootstrap 2.3.0](http://twitter.github.com/bootstrap/)
-
-```html
-<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-responsive.min.css">
-
-<script src="libs/jquery/jquery-1.7.1.min.js"></script>
-<script src="libs/modernizr/modernizr-2.0.6.min.js"></script>
-<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-```
-
-## Download
-
-**The latest release, 1.3.5, is [available here](http://draeton.github.com/stitches/stitches/dist/stitches-1.3.5.zip).**
 
 
-## Contributors
+## Warning:
 
-* [amenadiel](https://github.com/amenadiel)
-* [egeriis](https://github.com/egeriis)
-* [flying-sheep](https://github.com/flying-sheep)
-* [JonDum](https://github.com/JonDum)
-* [mreq](https://github.com/mreq)
+This is a bit of a mess, currently, but it got the job done. As of the latest commit, you need to
+
+- Upload retina images without the '2x' extensions (because they form the classname)
+- Download the image 'spritesheet.png' and rename it 'spritesheet-2x.png'
+- Duplicate 'spritesheet-2x.png', shrink to 50% and rename to 'spritesheet.png'
+
+
 
 
 ## License
 
 (The MIT License)
 
-Copyright (c) 2013 [Matthew Cobbs](mailto:draeton@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
