@@ -52,12 +52,15 @@ function ($, util, templates, BaseStylesheet) {
             var ctx = canvas.getContext("2d");
             var image = new Image();
             image.src = spritesheet;
+            var arr = this.settings.filename.split('.');
+            var retinaImage = arr[0] + '-2x.' + arr[1];
             return templates.stylus({
                 prefix: prefix,
                 backgroundImage: backgroundImage,
                 sprites: sprites,
                 spritesheet: spritesheet,
-                image:image
+                image: image,
+                retinaImage: retinaImage
             });
         }
     });
