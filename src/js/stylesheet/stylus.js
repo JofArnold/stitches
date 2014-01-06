@@ -48,11 +48,16 @@ function ($, util, templates, BaseStylesheet) {
          */
         get: function (sprites, spritesheet, prefix, uri) {
             var backgroundImage = uri ? spritesheet : this.settings.filename;
-
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext("2d");
+            var image = new Image();
+            image.src = spritesheet;
             return templates.stylus({
                 prefix: prefix,
                 backgroundImage: backgroundImage,
-                sprites: sprites
+                sprites: sprites,
+                spritesheet: spritesheet,
+                image:image
             });
         }
     });
