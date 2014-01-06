@@ -31,10 +31,10 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
 
     var defaults = {
         layout: "compact", // default canvas sprite placement layout
-        prefix: "sprite", // default stylesheet class prefix
-        padding: 5, // default padding around sprites in pixels
+        prefix: "sprites", // default stylesheet class prefix
+        padding: 16, // default padding around sprites in pixels
         uri: false, // whether or not to include the data-uri image (quite large)
-        stylesheet: "css" // either css or less at the moment
+        stylesheet: "stylus" // either css or less or stylus at the moment
     };
 
     /**

@@ -20,11 +20,6 @@
                 <i class="icon-download-alt icon-white"></i> <span class="hidden-phone">Downloads</span>
             </button>
         </div>
-        <div class="btn-group">
-            <button data-action="about" class="btn btn-small btn-info" title="About Stitches">
-                <i class="icon-info-sign icon-white"></i> <span class="hidden-phone">About</span>
-            </button>
-        </div>
     </div>
     <!-- /.stitches-toolbar -->
 
@@ -115,7 +110,7 @@
                                     <label class="control-label">Padding</label>
                                     <div class="controls">
                                         <div class="input-append">
-                                            <input name="padding" type="number" min="0" required placeholder="Sprite padding&hellip;">
+                                            <input name="padding" type="number" min="0" value="9" required placeholder="Sprite padding&hellip;">
                                             <span class="add-on">px</span>
                                         </div>
                                     </div>
