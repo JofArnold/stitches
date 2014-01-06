@@ -1,4 +1,4 @@
-[Stitches](http://draeton.github.com/stitches/)
+[Stitches](https://github.com/JofArnold/stitches)
 ==========
 
 Stitches is an HTML5 sprite sheet generator.
