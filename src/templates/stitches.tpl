@@ -90,13 +90,16 @@
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">CSS/LESS</label>
+                                    <label class="control-label">CSS/LESS/STYLUS</label>
                                     <div class="controls">
                                         <label class="radio inline">
                                             <input name="stylesheet" type="radio" value="css"/> CSS
                                         </label>
                                         <label class="radio inline">
                                             <input name="stylesheet" type="radio" value="less"/> LESS
+                                        </label>
+                                        <label class="radio inline">
+                                            <input name="stylesheet" type="radio" value="stylus"/> STYLUS
                                         </label>
                                     </div>
                                 </div>
@@ -196,34 +199,6 @@
                 </div>
             </div>
             <!-- /.stitches-properties -->
-
-            <!-- .stitches-about -->
-            <div class="stitches-palette stitches-about fade in">
-                <div class="stitches-palette-header">
-                    <button type="button" class="close" data-action="close" title="Close">&times;</button>
-                    <h4>About Stitches</h4>
-                </div>
-
-                <div class="stitches-palette-body">
-                    <p><a href="http://draeton.github.io/stitches/">Stitches<a/> is an HTML5 <a href="http://en.wikipedia.org/wiki/Sprite_(computer_graphics)#Sprites_by_CSS">sprite sheet</a> generator.</p>
-
-                    <p>Drag &amp; drop image files onto the space below, or use the &ldquo;Open&rdquo; link to load images using the file browser. Then, click &ldquo;Generate&rdquo; to create a sprite sheet and stylesheet. <em>This demo uses a couple of HTML5 APIs, and it is only currently compatible with WebKit and Firefox browsers.</em></p>
-
-                    <p>Stitches is developed by <a href="http://draeton.github.io">Matthew Cobbs</a> in concert with the lovely open-source community at <a href="http://github.io">Github</a>. Thanks are owed to the developers at Twitter for <a href="http://twitter.github.io/bootstrap">Bootstrap</a>, and <a href="http://glyphicons.com/">Glyphicons</a> for some cool little icons.</p>
-
-                    <p class="text-right"><small>Copyright &copy; 2013 Matthew Cobbs<br/>
-                        Licensed under the MIT license.</small></p>
-                </div>
-
-                <div class="stitches-palette-footer">
-                    <div class="btn-toolbar">
-                        <div class="btn-group">
-                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>Close</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.stitches-about -->
 
             <!-- .stitches-downloads -->
             <div class="stitches-palette stitches-downloads fade">

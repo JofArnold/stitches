@@ -19,5 +19,6 @@
         <style type="text/<%= stylesheetType %>"><%= stylesheetWithUri %></style>
         <div><%= markupTooltip %></div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/stylus/0.32.1/stylus.js"></script>
     </div>
 </div>
