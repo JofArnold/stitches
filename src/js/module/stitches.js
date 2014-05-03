@@ -668,9 +668,11 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
 
             // buttons
 
+            console.log(this);
             $spritesheet_2x.attr({
                 "href": this.spritesheet,
-                "target": "_blank"
+                "target": "_blank",
+                "download": "spritesheet-2x"
             });
 
             var canvasHalfed = document.createElement("canvas");
@@ -685,7 +687,8 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
             console.log(halfed, this.spritesheet);
             $spritesheet.attr({
                 "href": halfed,
-                "target": "_blank"
+                "target": "_blank",
+                "download": "spritesheet"
             });
 
             $stylesheet.attr({
