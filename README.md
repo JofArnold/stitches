@@ -1,11 +1,11 @@
 # [Stitches With Stylus and Retina Support](https://github.com/JofArnold/stitches)
 
-This app adds a few features to the very great Stitches. Stitches is an HTML5 sprite sheet generator. The current version is `1.3.5`. Original documentation is available
+This app adds a few features to the very great Stitches 1.3.5. Stitches is an HTML5 sprite sheet generator. Original documentation - from which this version doesn't stray significantly - is available
 [here](http://draeton.github.com/stitches/stitches/doc/stitches.js.html).
 
 ## Warning
 
-This is provided as-is. There's no tests. The code is hacked-together with no regard for other people using it. Having said that, it works well if you wish to create stylus-compatible retina and non-retina spritemaps and stylesheets.
+This is provided as-is. There's no tests. The code is hacked-together from Stitches 1.3.5 with no regard for other people using it. Having said that, it works well if you wish to create stylus-compatible retina and non-retina spritemaps and stylesheets.
 
 ## License
 
