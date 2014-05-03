@@ -99,6 +99,8 @@
 
 .stitches-downloads {
     width: 600px;
+    display: block;
+    opacity: 1;
 }
 
 .stitches-downloads .stitches-palette-body {
