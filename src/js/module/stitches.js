@@ -648,6 +648,7 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
          */
         updateDownloadsPalette: function (e) {
             var $section = this.$downloads.find("section");
+            var $spritesheet_2x = this.$downloads.find(".downloads-spritesheet-2x");
             var $spritesheet = this.$downloads.find(".downloads-spritesheet");
             var $stylesheet = this.$downloads.find(".downloads-stylesheet");
 
@@ -666,10 +667,27 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
             $section.html(html);
 
             // buttons
-            $spritesheet.attr({
+
+            $spritesheet_2x.attr({
                 "href": this.spritesheet,
                 "target": "_blank"
             });
+
+            var canvasHalfed = document.createElement("canvas");
+            var ctx = canvasHalfed.getContext("2d");
+            var image = new Image();
+            image.src = this.spritesheet;
+            var w = image.width;
+            var h = image.height;
+            ctx.drawImage(image,0,0,w/2,h/2);
+            var halfed = canvasHalfed.toDataURL();
+
+            console.log(halfed, this.spritesheet);
+            $spritesheet.attr({
+                "href": halfed,
+                "target": "_blank"
+            });
+
             $stylesheet.attr({
                 "href": "data:text/plain," + encodeURIComponent(this.stylesheet),
                 "target": "_blank"

@@ -210,6 +210,7 @@
                     <div class="btn-toolbar">
                         <div class="btn-group">
                             <a href="#" class="downloads-spritesheet btn btn-small btn-success" download="spritesheet"><i class="icon-download-alt icon-white"></i> Spritesheet</a>
+                            <a href="#" class="downloads-spritesheet-2x btn btn-small btn-success" download="spritesheet"><i class="icon-download-alt icon-white"></i> Spritesheet 2x</a>
                             <a href="#" class="downloads-stylesheet btn btn-small btn-success" download="stylesheet"><i class="icon-download-alt icon-white"></i> Stylesheet</a>
                             <button class="btn btn-small btn-info" data-action="close" title="Close"><span>Close</span></button>
                         </div>
