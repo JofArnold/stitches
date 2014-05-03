@@ -679,9 +679,11 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
             var ctx = canvasHalfed.getContext("2d");
             var image = new Image();
             image.src = this.spritesheet;
-            var w = image.width;
-            var h = image.height;
-            ctx.drawImage(image,0,0,w/2,h/2);
+            var w = image.width/2;
+            var h = image.height/2;
+            canvasHalfed.width = w;
+            canvasHalfed.height = h;
+            ctx.drawImage(image,0,0,w,h);
             var halfed = canvasHalfed.toDataURL();
 
             console.log(halfed, this.spritesheet);
