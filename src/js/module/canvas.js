@@ -24,8 +24,8 @@ function($, util, array, layoutManager, Sprite) {
     var defaults = {
         images: null, // an array holding any pre-init included images
         dimensions: {
-            width: 400, // default canvas width
-            height: 400 // default canvas height
+            width: 800, // default canvas width
+            height: 800 // default canvas height
         }
     };
 
